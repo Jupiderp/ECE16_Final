@@ -13,3 +13,5 @@ The controls will be defined by the following:
 
 - Direction: -180 to 180. Integer values, describes the angle the car is turning. 0 means the car is going in a straight line
 - Gas: -1.0 to 1.0. Float values. describes the amount of gas/reverse your car is undergoing. 
+
+When sending your controls over UDP, ensure that it is formatted as a string "direction,gas". No spaces, and in that order. Anything else **will not work**. For example, if your direction is 100, and your gas is 1.1, your message should be "100,1.1"
