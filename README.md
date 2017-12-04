@@ -1,13 +1,12 @@
 # ECE16_Final
 
-Code coming soon... 
+Utilizing EMG data from each arm, as well as gyro and accel data, create a game controller to control the car in py-race.
 
-If you want to get started early, look at https://wiki.python.org/moin/UdpCommunication 
-since we will be talking to the game via UDP, locally.
+We will be using UDP to communicate to our game. Look at ```udp_receive.py``` and ```udp_send.py``` as examples.
 
 The game code will be based on https://github.com/codingchili/py-race
 
-Do not modify the main code, create your own ```controller.py``` file
+Do not modify the main code, create your own ```controller.py``` file. You should use the same code as ```udp_send.py``` to talk to the main code via UDP.
 
 The controls will be defined by the following:
 
