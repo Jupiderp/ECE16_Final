@@ -1,5 +1,7 @@
 # ECE16_Final
 
+Install the ```pygame``` library prior to working with the code
+
 Utilizing EMG data from each arm, as well as gyro and accel data, create a game controller to control the car in py-race.
 
 We will be using UDP to communicate to our game. Look at ```udp_receive.py``` and ```udp_send.py``` as examples.
