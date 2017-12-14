@@ -62,6 +62,8 @@ def main():
     timer_alert_s = pygame.sprite.Group()
     bound_alert_s = pygame.sprite.Group()
     menu_alert_s = pygame.sprite.Group()
+    gas = 0
+    angle = 0
 
 #generate tiles
     for tile_num in range (0, len(maps.map_tile)):
@@ -128,6 +130,8 @@ def main():
             gas = float(message_arr[1])
 
             car.steerint(angle)
+            car.accelfloat(gas)
+        else:
             car.accelfloat(gas)
 
 #Check for key input. (KEYDOWN, trigger often)
