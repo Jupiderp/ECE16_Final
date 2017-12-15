@@ -132,7 +132,10 @@ def main():
             car.steerint(angle)
             car.accelfloat(gas)
         else:
-            car.accelfloat(gas)
+            if (gas > 0):
+                car.accelerate()
+            elif (gas < 0):
+                car.deaccelerate()
 
 #Check for key input. (KEYDOWN, trigger often)
         keys = pygame.key.get_pressed()
